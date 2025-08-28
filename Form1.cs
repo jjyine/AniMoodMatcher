@@ -27,5 +27,11 @@ namespace AnimeMoodMatcher
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
+
+        private void 내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistory formhistory = new FormHistory();
+            formhistory.Show();
+        }
     }
 }

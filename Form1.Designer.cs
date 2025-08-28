@@ -166,6 +166,7 @@
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
             this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
+            this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
