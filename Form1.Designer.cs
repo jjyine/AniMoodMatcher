@@ -41,26 +41,26 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.프로젝트정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.rdHappy = new System.Windows.Forms.RadioButton();
+            this.rdSad = new System.Windows.Forms.RadioButton();
+            this.rdDepressed = new System.Windows.Forms.RadioButton();
+            this.rdAngry = new System.Windows.Forms.RadioButton();
+            this.rdtired = new System.Windows.Forms.RadioButton();
+            this.rdLove = new System.Windows.Forms.RadioButton();
+            this.rdFriend = new System.Windows.Forms.RadioButton();
+            this.rdAdventure = new System.Windows.Forms.RadioButton();
+            this.rdEmotion = new System.Windows.Forms.RadioButton();
+            this.rdComedy = new System.Windows.Forms.RadioButton();
+            this.rdGrowth = new System.Windows.Forms.RadioButton();
+            this.rdDaily = new System.Windows.Forms.RadioButton();
+            this.rdChallenge = new System.Windows.Forms.RadioButton();
+            this.rdFantasy = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rdBrainOFF = new System.Windows.Forms.RadioButton();
+            this.rdBrainRelax = new System.Windows.Forms.RadioButton();
+            this.rdBrainFocus = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -99,11 +99,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("나눔스퀘어라운드 Regular", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(12, 17);
+            this.label3.Location = new System.Drawing.Point(12, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(303, 28);
+            this.label3.Size = new System.Drawing.Size(140, 14);
             this.label3.TabIndex = 4;
-            this.label3.Text = "가장 듣고싶은 이야기는?\r\n(사랑, 우정, 모험, 감동, 코미디, 성장, 일상, 판타지, 도전)";
+            this.label3.Text = "가장 듣고싶은 이야기는?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
@@ -112,9 +112,9 @@
             this.label2.Font = new System.Drawing.Font("나눔스퀘어라운드 Regular", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(12, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 14);
+            this.label2.Size = new System.Drawing.Size(143, 14);
             this.label2.TabIndex = 2;
-            this.label2.Text = "지금 가장 가까운 감정은?(기쁨, 슬픔, 우울, 분노, 피로)";
+            this.label2.Text = "지금 가장 가까운 감정은?";
             // 
             // groupBox2
             // 
@@ -189,171 +189,171 @@
             this.프로젝트정보ToolStripMenuItem.Text = "프로젝트 정보";
             this.프로젝트정보ToolStripMenuItem.Click += new System.EventHandler(this.프로젝트정보ToolStripMenuItem_Click);
             // 
-            // radioButton4
+            // rdHappy
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(15, 49);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(47, 17);
-            this.radioButton4.TabIndex = 10;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "기쁨";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdHappy.AutoSize = true;
+            this.rdHappy.Location = new System.Drawing.Point(15, 49);
+            this.rdHappy.Name = "rdHappy";
+            this.rdHappy.Size = new System.Drawing.Size(47, 17);
+            this.rdHappy.TabIndex = 10;
+            this.rdHappy.TabStop = true;
+            this.rdHappy.Text = "기쁨";
+            this.rdHappy.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdSad
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(68, 49);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(47, 17);
-            this.radioButton5.TabIndex = 11;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "슬픔";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdSad.AutoSize = true;
+            this.rdSad.Location = new System.Drawing.Point(68, 49);
+            this.rdSad.Name = "rdSad";
+            this.rdSad.Size = new System.Drawing.Size(47, 17);
+            this.rdSad.TabIndex = 11;
+            this.rdSad.TabStop = true;
+            this.rdSad.Text = "슬픔";
+            this.rdSad.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdDepressed
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(121, 49);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(47, 17);
-            this.radioButton6.TabIndex = 12;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "우울";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdDepressed.AutoSize = true;
+            this.rdDepressed.Location = new System.Drawing.Point(121, 49);
+            this.rdDepressed.Name = "rdDepressed";
+            this.rdDepressed.Size = new System.Drawing.Size(47, 17);
+            this.rdDepressed.TabIndex = 12;
+            this.rdDepressed.TabStop = true;
+            this.rdDepressed.Text = "우울";
+            this.rdDepressed.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdAngry
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(174, 49);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(47, 17);
-            this.radioButton7.TabIndex = 13;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "분노";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdAngry.AutoSize = true;
+            this.rdAngry.Location = new System.Drawing.Point(174, 49);
+            this.rdAngry.Name = "rdAngry";
+            this.rdAngry.Size = new System.Drawing.Size(47, 17);
+            this.rdAngry.TabIndex = 13;
+            this.rdAngry.TabStop = true;
+            this.rdAngry.Text = "분노";
+            this.rdAngry.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rdtired
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(227, 49);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(47, 17);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "피로";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rdtired.AutoSize = true;
+            this.rdtired.Location = new System.Drawing.Point(227, 49);
+            this.rdtired.Name = "rdtired";
+            this.rdtired.Size = new System.Drawing.Size(47, 17);
+            this.rdtired.TabIndex = 14;
+            this.rdtired.TabStop = true;
+            this.rdtired.Text = "피로";
+            this.rdtired.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // rdLove
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(15, 58);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(47, 17);
-            this.radioButton9.TabIndex = 15;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "사랑";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rdLove.AutoSize = true;
+            this.rdLove.Location = new System.Drawing.Point(15, 58);
+            this.rdLove.Name = "rdLove";
+            this.rdLove.Size = new System.Drawing.Size(47, 17);
+            this.rdLove.TabIndex = 15;
+            this.rdLove.TabStop = true;
+            this.rdLove.Text = "사랑";
+            this.rdLove.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // rdFriend
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(68, 58);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(47, 17);
-            this.radioButton10.TabIndex = 16;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "우정";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.rdFriend.AutoSize = true;
+            this.rdFriend.Location = new System.Drawing.Point(68, 58);
+            this.rdFriend.Name = "rdFriend";
+            this.rdFriend.Size = new System.Drawing.Size(47, 17);
+            this.rdFriend.TabIndex = 16;
+            this.rdFriend.TabStop = true;
+            this.rdFriend.Text = "우정";
+            this.rdFriend.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // rdAdventure
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(121, 58);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(47, 17);
-            this.radioButton11.TabIndex = 17;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "모험";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.rdAdventure.AutoSize = true;
+            this.rdAdventure.Location = new System.Drawing.Point(121, 58);
+            this.rdAdventure.Name = "rdAdventure";
+            this.rdAdventure.Size = new System.Drawing.Size(47, 17);
+            this.rdAdventure.TabIndex = 17;
+            this.rdAdventure.TabStop = true;
+            this.rdAdventure.Text = "모험";
+            this.rdAdventure.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // rdEmotion
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(174, 58);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(47, 17);
-            this.radioButton12.TabIndex = 18;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "감동";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.rdEmotion.AutoSize = true;
+            this.rdEmotion.Location = new System.Drawing.Point(174, 58);
+            this.rdEmotion.Name = "rdEmotion";
+            this.rdEmotion.Size = new System.Drawing.Size(47, 17);
+            this.rdEmotion.TabIndex = 18;
+            this.rdEmotion.TabStop = true;
+            this.rdEmotion.Text = "감동";
+            this.rdEmotion.UseVisualStyleBackColor = true;
             // 
-            // radioButton13
+            // rdComedy
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(227, 58);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(58, 17);
-            this.radioButton13.TabIndex = 19;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "코미디";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.rdComedy.AutoSize = true;
+            this.rdComedy.Location = new System.Drawing.Point(227, 58);
+            this.rdComedy.Name = "rdComedy";
+            this.rdComedy.Size = new System.Drawing.Size(58, 17);
+            this.rdComedy.TabIndex = 19;
+            this.rdComedy.TabStop = true;
+            this.rdComedy.Text = "코미디";
+            this.rdComedy.UseVisualStyleBackColor = true;
             // 
-            // radioButton14
+            // rdGrowth
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(15, 81);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(47, 17);
-            this.radioButton14.TabIndex = 20;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "성장";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.rdGrowth.AutoSize = true;
+            this.rdGrowth.Location = new System.Drawing.Point(15, 81);
+            this.rdGrowth.Name = "rdGrowth";
+            this.rdGrowth.Size = new System.Drawing.Size(47, 17);
+            this.rdGrowth.TabIndex = 20;
+            this.rdGrowth.TabStop = true;
+            this.rdGrowth.Text = "성장";
+            this.rdGrowth.UseVisualStyleBackColor = true;
             // 
-            // radioButton15
+            // rdDaily
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(68, 81);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(47, 17);
-            this.radioButton15.TabIndex = 21;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "일상";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.rdDaily.AutoSize = true;
+            this.rdDaily.Location = new System.Drawing.Point(68, 81);
+            this.rdDaily.Name = "rdDaily";
+            this.rdDaily.Size = new System.Drawing.Size(47, 17);
+            this.rdDaily.TabIndex = 21;
+            this.rdDaily.TabStop = true;
+            this.rdDaily.Text = "일상";
+            this.rdDaily.UseVisualStyleBackColor = true;
             // 
-            // radioButton16
+            // rdChallenge
             // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(121, 81);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(47, 17);
-            this.radioButton16.TabIndex = 22;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "도전";
-            this.radioButton16.UseVisualStyleBackColor = true;
+            this.rdChallenge.AutoSize = true;
+            this.rdChallenge.Location = new System.Drawing.Point(121, 81);
+            this.rdChallenge.Name = "rdChallenge";
+            this.rdChallenge.Size = new System.Drawing.Size(47, 17);
+            this.rdChallenge.TabIndex = 22;
+            this.rdChallenge.TabStop = true;
+            this.rdChallenge.Text = "도전";
+            this.rdChallenge.UseVisualStyleBackColor = true;
             // 
-            // radioButton17
+            // rdFantasy
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Location = new System.Drawing.Point(174, 81);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(58, 17);
-            this.radioButton17.TabIndex = 23;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "판타지";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.rdFantasy.AutoSize = true;
+            this.rdFantasy.Location = new System.Drawing.Point(174, 81);
+            this.rdFantasy.Name = "rdFantasy";
+            this.rdFantasy.Size = new System.Drawing.Size(58, 17);
+            this.rdFantasy.TabIndex = 23;
+            this.rdFantasy.TabStop = true;
+            this.rdFantasy.Text = "판타지";
+            this.rdFantasy.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.radioButton17);
-            this.groupBox4.Controls.Add(this.radioButton16);
-            this.groupBox4.Controls.Add(this.radioButton15);
-            this.groupBox4.Controls.Add(this.radioButton14);
-            this.groupBox4.Controls.Add(this.radioButton13);
-            this.groupBox4.Controls.Add(this.radioButton12);
-            this.groupBox4.Controls.Add(this.radioButton11);
-            this.groupBox4.Controls.Add(this.radioButton10);
-            this.groupBox4.Controls.Add(this.radioButton9);
+            this.groupBox4.Controls.Add(this.rdFantasy);
+            this.groupBox4.Controls.Add(this.rdChallenge);
+            this.groupBox4.Controls.Add(this.rdDaily);
+            this.groupBox4.Controls.Add(this.rdGrowth);
+            this.groupBox4.Controls.Add(this.rdComedy);
+            this.groupBox4.Controls.Add(this.rdEmotion);
+            this.groupBox4.Controls.Add(this.rdAdventure);
+            this.groupBox4.Controls.Add(this.rdFriend);
+            this.groupBox4.Controls.Add(this.rdLove);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(20, 205);
             this.groupBox4.Name = "groupBox4";
@@ -363,11 +363,11 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.radioButton8);
-            this.groupBox5.Controls.Add(this.radioButton7);
-            this.groupBox5.Controls.Add(this.radioButton6);
-            this.groupBox5.Controls.Add(this.radioButton5);
-            this.groupBox5.Controls.Add(this.radioButton4);
+            this.groupBox5.Controls.Add(this.rdtired);
+            this.groupBox5.Controls.Add(this.rdAngry);
+            this.groupBox5.Controls.Add(this.rdDepressed);
+            this.groupBox5.Controls.Add(this.rdSad);
+            this.groupBox5.Controls.Add(this.rdHappy);
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Location = new System.Drawing.Point(20, 116);
             this.groupBox5.Name = "groupBox5";
@@ -385,47 +385,47 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "뇌 상태를 표현한다면?\r\n";
             // 
-            // radioButton1
+            // rdBrainOFF
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 47);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "OFF";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rdBrainOFF.AutoSize = true;
+            this.rdBrainOFF.Location = new System.Drawing.Point(15, 47);
+            this.rdBrainOFF.Name = "rdBrainOFF";
+            this.rdBrainOFF.Size = new System.Drawing.Size(47, 17);
+            this.rdBrainOFF.TabIndex = 7;
+            this.rdBrainOFF.TabStop = true;
+            this.rdBrainOFF.Text = "OFF";
+            this.rdBrainOFF.UseVisualStyleBackColor = true;
+            this.rdBrainOFF.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rdBrainRelax
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(68, 47);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 17);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "편안";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdBrainRelax.AutoSize = true;
+            this.rdBrainRelax.Location = new System.Drawing.Point(68, 47);
+            this.rdBrainRelax.Name = "rdBrainRelax";
+            this.rdBrainRelax.Size = new System.Drawing.Size(47, 17);
+            this.rdBrainRelax.TabIndex = 8;
+            this.rdBrainRelax.TabStop = true;
+            this.rdBrainRelax.Text = "편안";
+            this.rdBrainRelax.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdBrainFocus
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(121, 47);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(47, 17);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "집중";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.rdBrainFocus.AutoSize = true;
+            this.rdBrainFocus.Location = new System.Drawing.Point(121, 47);
+            this.rdBrainFocus.Name = "rdBrainFocus";
+            this.rdBrainFocus.Size = new System.Drawing.Size(47, 17);
+            this.rdBrainFocus.TabIndex = 9;
+            this.rdBrainFocus.TabStop = true;
+            this.rdBrainFocus.Text = "집중";
+            this.rdBrainFocus.UseVisualStyleBackColor = true;
+            this.rdBrainFocus.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox3.Controls.Add(this.radioButton3);
-            this.groupBox3.Controls.Add(this.radioButton2);
-            this.groupBox3.Controls.Add(this.radioButton1);
+            this.groupBox3.Controls.Add(this.rdBrainFocus);
+            this.groupBox3.Controls.Add(this.rdBrainRelax);
+            this.groupBox3.Controls.Add(this.rdBrainOFF);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(20, 27);
             this.groupBox3.Name = "groupBox3";
@@ -474,26 +474,26 @@
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 프로젝트정보ToolStripMenuItem;
         private System.Windows.Forms.TextBox tbResult;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton rdtired;
+        private System.Windows.Forms.RadioButton rdAngry;
+        private System.Windows.Forms.RadioButton rdDepressed;
+        private System.Windows.Forms.RadioButton rdSad;
+        private System.Windows.Forms.RadioButton rdHappy;
+        private System.Windows.Forms.RadioButton rdComedy;
+        private System.Windows.Forms.RadioButton rdEmotion;
+        private System.Windows.Forms.RadioButton rdAdventure;
+        private System.Windows.Forms.RadioButton rdFriend;
+        private System.Windows.Forms.RadioButton rdLove;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton rdFantasy;
+        private System.Windows.Forms.RadioButton rdChallenge;
+        private System.Windows.Forms.RadioButton rdDaily;
+        private System.Windows.Forms.RadioButton rdGrowth;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdBrainFocus;
+        private System.Windows.Forms.RadioButton rdBrainRelax;
+        private System.Windows.Forms.RadioButton rdBrainOFF;
         private System.Windows.Forms.Label label1;
     }
 }
