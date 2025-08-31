@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gbEmotion = new System.Windows.Forms.GroupBox();
             this.rdtired = new System.Windows.Forms.RadioButton();
             this.rdAngry = new System.Windows.Forms.RadioButton();
             this.rdDepressed = new System.Windows.Forms.RadioButton();
             this.rdSad = new System.Windows.Forms.RadioButton();
             this.rdHappy = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbGenre = new System.Windows.Forms.GroupBox();
             this.rdFantasy = new System.Windows.Forms.RadioButton();
             this.rdChallenge = new System.Windows.Forms.RadioButton();
             this.rdDaily = new System.Windows.Forms.RadioButton();
@@ -47,7 +47,7 @@
             this.rdFriend = new System.Windows.Forms.RadioButton();
             this.rdLove = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbBrain = new System.Windows.Forms.GroupBox();
             this.rdBrainFocus = new System.Windows.Forms.RadioButton();
             this.rdBrainRelax = new System.Windows.Forms.RadioButton();
             this.rdBrainOFF = new System.Windows.Forms.RadioButton();
@@ -63,18 +63,18 @@
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.프로젝트정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbEmotion.SuspendLayout();
+            this.gbGenre.SuspendLayout();
+            this.gbBrain.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.gbEmotion);
+            this.groupBox1.Controls.Add(this.gbGenre);
+            this.groupBox1.Controls.Add(this.gbBrain);
             this.groupBox1.Controls.Add(this.btnResult);
             this.groupBox1.Font = new System.Drawing.Font("나눔스퀘어라운드 Regular", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(14, 50);
@@ -87,21 +87,21 @@
             this.groupBox1.Text = "정보 입력";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox5
+            // gbEmotion
             // 
-            this.groupBox5.Controls.Add(this.rdtired);
-            this.groupBox5.Controls.Add(this.rdAngry);
-            this.groupBox5.Controls.Add(this.rdDepressed);
-            this.groupBox5.Controls.Add(this.rdSad);
-            this.groupBox5.Controls.Add(this.rdHappy);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Location = new System.Drawing.Point(23, 145);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox5.Size = new System.Drawing.Size(392, 104);
-            this.groupBox5.TabIndex = 26;
-            this.groupBox5.TabStop = false;
+            this.gbEmotion.Controls.Add(this.rdtired);
+            this.gbEmotion.Controls.Add(this.rdAngry);
+            this.gbEmotion.Controls.Add(this.rdDepressed);
+            this.gbEmotion.Controls.Add(this.rdSad);
+            this.gbEmotion.Controls.Add(this.rdHappy);
+            this.gbEmotion.Controls.Add(this.label2);
+            this.gbEmotion.Location = new System.Drawing.Point(23, 145);
+            this.gbEmotion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbEmotion.Name = "gbEmotion";
+            this.gbEmotion.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbEmotion.Size = new System.Drawing.Size(392, 104);
+            this.gbEmotion.TabIndex = 26;
+            this.gbEmotion.TabStop = false;
             // 
             // rdtired
             // 
@@ -173,25 +173,25 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "지금 가장 가까운 감정은?";
             // 
-            // groupBox4
+            // gbGenre
             // 
-            this.groupBox4.Controls.Add(this.rdFantasy);
-            this.groupBox4.Controls.Add(this.rdChallenge);
-            this.groupBox4.Controls.Add(this.rdDaily);
-            this.groupBox4.Controls.Add(this.rdGrowth);
-            this.groupBox4.Controls.Add(this.rdComedy);
-            this.groupBox4.Controls.Add(this.rdEmotion);
-            this.groupBox4.Controls.Add(this.rdAdventure);
-            this.groupBox4.Controls.Add(this.rdFriend);
-            this.groupBox4.Controls.Add(this.rdLove);
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Location = new System.Drawing.Point(23, 256);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Size = new System.Drawing.Size(392, 149);
-            this.groupBox4.TabIndex = 25;
-            this.groupBox4.TabStop = false;
+            this.gbGenre.Controls.Add(this.rdFantasy);
+            this.gbGenre.Controls.Add(this.rdChallenge);
+            this.gbGenre.Controls.Add(this.rdDaily);
+            this.gbGenre.Controls.Add(this.rdGrowth);
+            this.gbGenre.Controls.Add(this.rdComedy);
+            this.gbGenre.Controls.Add(this.rdEmotion);
+            this.gbGenre.Controls.Add(this.rdAdventure);
+            this.gbGenre.Controls.Add(this.rdFriend);
+            this.gbGenre.Controls.Add(this.rdLove);
+            this.gbGenre.Controls.Add(this.label3);
+            this.gbGenre.Location = new System.Drawing.Point(23, 256);
+            this.gbGenre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbGenre.Name = "gbGenre";
+            this.gbGenre.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbGenre.Size = new System.Drawing.Size(392, 149);
+            this.gbGenre.TabIndex = 25;
+            this.gbGenre.TabStop = false;
             // 
             // rdFantasy
             // 
@@ -312,20 +312,20 @@
             this.label3.Text = "가장 듣고싶은 이야기는?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // groupBox3
+            // gbBrain
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox3.Controls.Add(this.rdBrainFocus);
-            this.groupBox3.Controls.Add(this.rdBrainRelax);
-            this.groupBox3.Controls.Add(this.rdBrainOFF);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(23, 34);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(392, 104);
-            this.groupBox3.TabIndex = 24;
-            this.groupBox3.TabStop = false;
+            this.gbBrain.BackColor = System.Drawing.SystemColors.Control;
+            this.gbBrain.Controls.Add(this.rdBrainFocus);
+            this.gbBrain.Controls.Add(this.rdBrainRelax);
+            this.gbBrain.Controls.Add(this.rdBrainOFF);
+            this.gbBrain.Controls.Add(this.label1);
+            this.gbBrain.Location = new System.Drawing.Point(23, 34);
+            this.gbBrain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbBrain.Name = "gbBrain";
+            this.gbBrain.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbBrain.Size = new System.Drawing.Size(392, 104);
+            this.gbBrain.TabIndex = 24;
+            this.gbBrain.TabStop = false;
             // 
             // rdBrainFocus
             // 
@@ -385,7 +385,7 @@
             this.btnResult.TabIndex = 6;
             this.btnResult.Text = "결과보기";
             this.btnResult.UseVisualStyleBackColor = true;
-            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click_1);
             // 
             // groupBox2
             // 
@@ -418,7 +418,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(914, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(914, 30);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -429,7 +429,7 @@
             this.toolStripSeparator1,
             this.끝내기ToolStripMenuItem});
             this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
-            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
             // 내역불러오기ToolStripMenuItem
@@ -455,7 +455,7 @@
             this.도움말ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.프로젝트정보ToolStripMenuItem});
             this.도움말ToolStripMenuItem.Name = "도움말ToolStripMenuItem";
-            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.도움말ToolStripMenuItem.Size = new System.Drawing.Size(68, 26);
             this.도움말ToolStripMenuItem.Text = "도움말";
             // 
             // 프로젝트정보ToolStripMenuItem
@@ -477,12 +477,12 @@
             this.Name = "Form1";
             this.Text = "애니무드 프로젝트";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbEmotion.ResumeLayout(false);
+            this.gbEmotion.PerformLayout();
+            this.gbGenre.ResumeLayout(false);
+            this.gbGenre.PerformLayout();
+            this.gbBrain.ResumeLayout(false);
+            this.gbBrain.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -517,13 +517,13 @@
         private System.Windows.Forms.RadioButton rdAdventure;
         private System.Windows.Forms.RadioButton rdFriend;
         private System.Windows.Forms.RadioButton rdLove;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbEmotion;
+        private System.Windows.Forms.GroupBox gbGenre;
         private System.Windows.Forms.RadioButton rdFantasy;
         private System.Windows.Forms.RadioButton rdChallenge;
         private System.Windows.Forms.RadioButton rdDaily;
         private System.Windows.Forms.RadioButton rdGrowth;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbBrain;
         private System.Windows.Forms.RadioButton rdBrainFocus;
         private System.Windows.Forms.RadioButton rdBrainRelax;
         private System.Windows.Forms.RadioButton rdBrainOFF;
