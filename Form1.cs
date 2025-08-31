@@ -18,6 +18,16 @@ namespace AnimeMoodMatcher
             InitializeComponent();
         }
 
+        public class Anime
+        {
+            public string Num { get; set; }
+            public string Brain { get; set; }
+            public string Emotion { get; set; }
+            public string Genre { get; set; }
+            public string Title { get; set; }
+            public string Why { get; set; }
+        }
+
         List<String> datalist = new List<String>();
         private DataTable animeTable;
 
@@ -77,7 +87,7 @@ namespace AnimeMoodMatcher
                         {
                             table.Rows.Add(data[0], data[1], data[2], data[3], data[4], data[5]);
                             datalist.Add(data[0]);
-                        }
+                        }   
                     }
                 }
             }
@@ -98,6 +108,37 @@ namespace AnimeMoodMatcher
             return table;
         }
 
+        private List<Anime> LoadAnimeList(string filepath)
+        {
+            var list = new List<Anime>();
+
+            try
+            {
+                foreach (var line in File.ReadLines(filepath))
+                {
+                    var data = line.Split(',');
+                    if (data.Length >= 6)
+                    {
+                        list.Add(new Anime
+                        {
+                            Num = data[0],
+                            Brain = data[1],
+                            Emotion = data[2],
+                            Genre = data[3],
+                            Title = data[4],
+                            Why = data[5]
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"CSV 읽기 오류: {ex.Message}");
+            }
+
+            return list;
+        }
+
         private string GetSelectedRadioText(GroupBox groupbox)
         {
             foreach (RadioButton rb in groupbox.Controls.OfType<RadioButton>())
@@ -111,12 +152,13 @@ namespace AnimeMoodMatcher
         }
 
 
-
         private void btnResult_Click_1(object sender, EventArgs e)
         {
             try
             {
-                DataTable table = LoadAnimeCsv("anime.csv");
+                //DataTable table = LoadAnimeCsv("anime.csv");
+                var animeList = LoadAnimeList("anime.csv");
+
 
                 string selectedBrain = GetSelectedRadioText(gbBrain);
                 string selectedEmotion = GetSelectedRadioText(gbEmotion);
@@ -130,23 +172,25 @@ namespace AnimeMoodMatcher
                     return;
                 }
 
-                tbResult.Text = $"선택된 뇌 상태: {selectedBrain}\r\n" +
-                       $"선택된 감정: {selectedEmotion}\r\n" +
-                       $"선택된 장르: {selectedGenre}";
+                //tbResult.Text = $"선택된 뇌 상태: {selectedBrain}\r\n" +
+                //       $"선택된 감정: {selectedEmotion}\r\n" +
+                //       $"선택된 장르: {selectedGenre}";
 
-                
+                var anime = animeList.FirstOrDefault(a =>
+                        a.Brain == selectedBrain &&
+                        a.Emotion == selectedEmotion &&
+                        a.Genre == selectedGenre
+                );
 
-                //StringBuilder sb = new StringBuilder();
-                //sb.AppendLine("num,brain,emotion,genre,anime,why");
 
-                //foreach (DataRow row in table.Rows)
-                //{
-                //    sb.AppendLine($"{row["num"]}\t{row["brain"]}\t{row["emotion"]}\t{row["genre"]}\t{row["anime"]}\t{row["why"]}");
-                //}
-
-                //tbResult.Text = sb.ToString();
-
-                this.animeTable = table;
+                if (anime != null)
+                {
+                    tbResult.Text = $"추천 애니: {anime.Title}\r\n{anime.Why}";
+                }
+                else
+                {
+                    tbResult.Text = "조건에 맞는 추천이 없습니다.";
+                }
             }
             catch (FileNotFoundException ex)
             {
